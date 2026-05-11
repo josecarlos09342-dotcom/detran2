@@ -81,7 +81,6 @@ function qr_base64($payload) {
     CURLOPT_SSL_VERIFYPEER => false,
   ]);
   $png = curl_exec($ch);
-  curl_close($ch);
   return $png ? ('data:image/png;base64,' . base64_encode($png)) : '';
 }
 function log_pix($descricao, $valor, $key, $renavam='', $placa='') {
