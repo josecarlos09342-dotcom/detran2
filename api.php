@@ -287,7 +287,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Segue redirecionamentos
 curl_setopt($ch, CURLOPT_ENCODING, ""); // Lida com compressão (gzip, deflate, br) automaticamente
 
 
-$dossieDebitosHtml = curl_exec($ch);
+echo $dossieDebitosHtml = curl_exec($ch);
 
 $gridWrapperHtml = getFirstNodeHtmlByClass($dossieHtml, 'div', ['grid-wrapper']);
 $contentDebitosHtml = getFirstNodeHtmlByClass($dossieDebitosHtml, 'div', ['accordion-body'], true);
