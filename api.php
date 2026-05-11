@@ -17,7 +17,7 @@ if (!$data) {
         'renavam' => $_GET['renavam'] ?? null
     ];
 }
-print_r($data);
+
 // 3. Validação final
 if (empty($data['placa']) || empty($data['renavam'])) {
     echo json_encode(['success' => false, 'message' => 'Dados inválidos. Envie placa e renavam via POST JSON ou URL GET.']);
