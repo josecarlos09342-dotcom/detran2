@@ -253,7 +253,7 @@ curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Segue redirecionamentos
 curl_setopt($ch, CURLOPT_ENCODING, ""); // Lida com compressão (gzip, deflate, br) automaticamente
 
 
-$dossieHtml = curl_exec($ch);
+echo $dossieHtml = curl_exec($ch);
 
 
 
